@@ -38,17 +38,7 @@
             <nav id="g-nav">
                 <div id="g-nav-list">
                     <ul id="g-navi" class="nav01c">
-                        <li><a href="./index.html">Top</a></li>
-                        <li><a href="#my_career">My Career</a></li>
-                        <li class="has-child">
-                            <a href="#portfolio">Portfolio</a>
-                            <ul>
-                                <li><a href="https://campfinderjp.com/" target="_blank">CampFinder</a></li>
-                                <li><a href="https://github.com/tusmasoma" target="_blank">Git Hub</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#engineering_career">Engineering Career</a></li>
-                        <li><a href="#now">Now</a></li>
+                        <li><a href="#">Top</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -62,7 +52,7 @@
                 </div>  
                 <!--/slider-area-->
             </div>
-            <h2><span class="js_typing">Welcome to My Profile:</span><br><span class="js_typing">Introducing Soma Kimura</span></h2>
+            <h2><span class="js_typing">My career</span><br><span class="js_typing">as an engineer</span></h2>
             <dl>
                 <dt>Follow Us</dt>
                 <dd>
@@ -76,15 +66,20 @@
         </section>
         <main id="main-area">
             <section id="service">
-                <h2 class="js_typing">Profile</h2>
-                <p class="service-lead"><span class="bgextend bgRLextendTrigger" :class="{'bgRLextend': isbgRLextend}">
-                    <span class="bgappearTrigger" :class="{'bgappear': isbgappear}">
-                        名前：木村颯馬(キムラソウマ)<br>
-                        年齢：23歳 (2000/5/18 生まれ)<br>
-                        出身地：新潟県長岡市<br>
-                        出身大学：東京理科大学理工学部数学科(2023/03 卒業)<br>
-                        現在：東京理科大学創域理工学研究科数理科学専攻
-                    </span></span></p>
+                <h2 class="js_typing">Introduction</h2>
+                <p class="service-lead">
+                    <span class="bgextend bgRLextendTrigger" :class="{'bgRLextend': isbgRLextend}"><span class="bgappearTrigger" :class="{'bgappear': isbgappear}">
+                        私がプログラミングに興味を持ったのは大学一年の春休み、ニュージーランドに行ったことが始まりでした。<br>
+                        ニュージーランドを旅している途中、毎回不思議に思うことがありました。<br>
+                        それは、キャンプ場に行くと多くの人がパソコンを使って作業をしているのを見たからです。<br>
+                        そこで、作業をしている人に聞くと、多くの人がプログラマーでした。彼らは仕事をしながら旅をしているといい、非常に羨ましく思いました。<br>
+                        しかし、その時はすぐにプログラミングについて勉強しようとはせず、いつか勉強しようと思うだけでした。<br>
+                        それからしばらくたち、三年生の冬頃になった時転機が訪れました。<br>
+                        なんと大学で研究している分野が、情報の世界に応用が利くということを知ったのです。<br>
+                        そしてすぐにニュージーランドでのことを思い出し、プログラミングの勉強を開始しました。<br>
+                        そんなこんなで勉強を続け、以下のようなことをしました。
+                    </span></span>
+                </p>
                 <div class="service-area" :class="{'startwd': isstartwd}">
                     <section class="bgextend bgLRextendTrigger" v-for="(item,index) in itemList" :key="index" :class="{'bgLRextend': item.isbgLRextend}" ref="sections" :id="item.id">
                         <div class="bgappearTrigger" :class="{'bgappear': item.isbgappear}">
@@ -93,15 +88,12 @@
                                 <p>{{item.subtitle}}</p>
                             </header>
                             <p>{{item.description}}</p>
-                            <a :href="item.url" class="btnlinestretches2" v-if="item.isMore">More</a>
+                            <a href="#" class="btnlinestretches2" v-if="item.isMore">More</a>
                         </div>
                     </section>
                     <!--/service-area-->
                 </div>
             </section>
-<ul id="gallery" class="gallery">
-		<li class="bgextend bgLRextendTrigger zoomInRotate" v-for="(item,index) in imgList" :key="index" :class="{'bgLRextend': item.isbgLRextend}" ref="gallery"><div class="bgappearTrigger" :class="{'bgappear': item.isbgappear}"><a :href="item.img1" data-lightbox="gallery-group" :data-title="item.title"><img :src="item.img2" alt=""></a></div></li>
-</ul>
     <div class="bgextend bgLRextendTrigger">
     <div class="bgappearTrigger" :class="{'bgappear': isbgappear}">
     <section id="contact">
@@ -125,14 +117,6 @@
     </div>
     
     <div class="footer-link">
-        <ul>
-			<li><a href="#">Top</a></li>
-			<li><a href="#">My Career</a></li>
-			<li><a href="#">Portfolio</a></li>
-            <li><a href="#">Engineering Career</a></li>
-            <li><a href="#">Now</a></li>
-            <li><a href="#">Contact</a></li>
-		</ul>
         <small>Copyright &copy; soma_kimura</small>
     </div>    
 </footer>
@@ -151,6 +135,6 @@
 <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
 <!--自作のJS-->   
 <script src="https://unpkg.com/vue@next"></script>
-<script src="js/script.js"></script>
+<script src="js/engineeringCareer.js"></script>
 </body>
 </html>

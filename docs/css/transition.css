@@ -1,0 +1,27 @@
+/*opacity*/
+.opa-enter-from,.opa-leave-to {
+    opacity: 0;
+}
+.opa-enter-to,.opa-leave-from {
+    opacity: 1;
+}
+.opa-enter-active,.opa-leave-active {
+    transition: opacity 0.5s;
+}
+/*ローディングエリア*/
+.page-animation-enter-active,
+.page-animation-leave-active {
+  transition: transform 0.8s ease-in-out;
+}
+
+.page-animation-enter-from,
+.page-animation-leave-to {
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.page-animation-leave,
+.page-animation-enter-to {
+  transform-origin: right;
+  transform: scaleX(1);
+}
