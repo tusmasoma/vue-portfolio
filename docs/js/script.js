@@ -1,6 +1,6 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
 
-const app = Vue.createApp({
+const app = createApp({
     data(){
         return {
             logoShow: true,    // ロゴの透明度初期値
